@@ -1,0 +1,361 @@
+@media (max-width: 1040px) {
+  #page2 {
+    height: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  /** PROJECTS */
+  .projects h1 {
+    font-size: 50px;
+  }
+
+  .bio h2 {
+    font-size: 20px;
+  }
+
+  .bio p {
+    font-size: 16px;
+  }
+
+  .projects_category a {
+    font-size: 16px;
+  }
+
+  /**ABOUT ME*/
+  .about_me h1 {
+    font-size: 50px;
+  }
+
+  .introduction p {
+    font-size: 16px;
+  }
+
+  .icon_language h2 {
+    font-size: 20px;
+  }
+
+  .info ul li {
+    font-size: 16px;
+  }
+  .info div img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header h1 {
+    font-size: 55px;
+  }
+
+  .left_header p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_links a {
+    font-size: 18px;
+  }
+
+  .sendMessage {
+    width: 40px;
+  }
+
+  .logo img {
+    width: 115px;
+    height: 55px;
+  }
+
+  .left_header h1 {
+    font-size: 48px;
+  }
+
+  .left_header h2 {
+    font-size: 20px;
+  }
+
+  .left_header p {
+    font-size: 16px;
+  }
+
+  .projects h1 {
+    font-size: 48px;
+  }
+
+  .right_header {
+    width: 200px;
+  }
+
+  .letterImg img {
+    width: 250px;
+  }
+
+  /**PROJECTS*/
+  .projects h2 {
+    font-size: 20px;
+  }
+
+  .projects_bio div p {
+    font-size: 16px;
+  }
+
+  .projects_bio {
+    margin-right: 0;
+  }
+
+  .bio span {
+    margin-bottom: 15px;
+  }
+
+  .projects_window {
+    display: block;
+  }
+
+  .projects_category {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .ctg {
+    width: 100%;
+    text-align: left;
+    height: 30px;
+  }
+
+  .ctg a {
+    margin-left: 5px;
+  }
+
+  .projects_category a:hover {
+    font-size: 16px;
+  }
+
+  .project_info {
+    justify-content: space-between;
+  }
+
+  .project_image {
+    width: 35%;
+  }
+
+  /**ABOUT*/
+  .icon_language img {
+    width: 50px;
+  }
+
+  .info ul li {
+    font-size: 16px;
+  }
+  .info div img {
+    width: 250px;
+  }
+
+  .overlayBio {
+    width: 80%;
+  }
+  .letterWrapper:hover ~ .letterImg img {
+    transform: translateY(-95px);
+    transition-delay: 500ms;
+  }
+
+  .item {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left_header {
+    margin-bottom: 30px;
+  }
+
+  .left_header h1 {
+    font-size: 36px;
+  }
+
+  .projects h1 {
+    font-size: 36px;
+  }
+
+  .about_me h1 {
+    font-size: 36px;
+  }
+
+  .right_header {
+    width: 150px;
+  }
+
+  .icon_language img {
+    width: 40px;
+  }
+
+  .project_info {
+    display: block;
+  }
+
+  .projects_bio {
+    margin-bottom: 20px;
+  }
+
+  .project_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project_image img {
+    width: 60%;
+  }
+
+  .projects_bio {
+    width: 100%;
+  }
+
+  .bio div {
+    margin-bottom: 10px;
+  }
+
+  .bio a {
+    margin-top: 10px;
+  }
+
+  .wall_img {
+    width: 50%;
+  }
+
+  /**OVERLAY*/
+  .messageBox form {
+    width: 300px;
+  }
+
+  .itemBox {
+    justify-content: center;
+  }
+
+  .item {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 425px) {
+  .sendMessage {
+    width: 30px;
+  }
+
+  .contact_box .sendMessage {
+    font-size: 12px;
+  }
+
+  .contact_box .browseProject {
+    font-size: 12px;
+  }
+
+  .left_header h1 {
+    font-size: 28px;
+  }
+
+  .nav_bar {
+    display: block;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .nav_flex {
+    padding-right: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .projects_window {
+    margin-top: 25px;
+  }
+
+  .projects h1 {
+    font-size: 28px;
+  }
+
+  .page2_title p {
+    font-size: 16px;
+  }
+
+  /**ABOUT*/
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .icon_language {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  .icon_language h2 {
+    margin-bottom: 7px;
+  }
+
+  .wall_img {
+    width: 70%;
+  }
+
+  .about_me h1 {
+    font-size: 28px;
+  }
+
+  .letterImg img {
+    width: 200px;
+  }
+
+  .letterWrapper:hover ~ .letterImg img {
+    transform: translateY(-80px);
+    transition-delay: 500ms;
+  }
+
+  /**OVERLAY*/
+  .messageBox form {
+    width: 270px;
+  }
+}
+
+@media (max-width: 375px) {
+  /**OVERLAY*/
+  .messageBox form {
+    width: 230px;
+  }
+
+  .letterImg img {
+    width: 200px;
+  }
+
+  .item {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width: 320px) {
+  .info div img {
+    width: 225px;
+  }
+}
