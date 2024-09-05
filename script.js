@@ -14,7 +14,7 @@ let projects = [
   },
   {
     id: "rentahouse",
-    name: "Rent a House",
+    name: "Peace of Mind",
     date: "August 2024",
     skills: "JavaScript, React, CSS",
     img: "img/correct-signal-svgrepo-com.svg",
