@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   transition: 200ms;
   text-decoration: none;
-  color: black;
+  color: rgb(205, 21, 21);
   font-size: 14px;
 }
 

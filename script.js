@@ -227,6 +227,7 @@ const columnHeight = document
   .getBoundingClientRect().height;
 const reveal = function (entries) {
   entries.forEach(function (entry) {
+    console.log(entry);
     if (entry.isIntersecting) {
       console.log(entry);
       entry.target.classList.add("reveal");
@@ -237,7 +238,6 @@ const reveal = function (entries) {
 const obsOption2 = {
   root: null,
   treshold: 0.8,
-  rootMargin: `-${columnHeight / 2}px`,
 };
 
 const observer2 = new IntersectionObserver(reveal, obsOption2);
