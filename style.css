@@ -153,6 +153,7 @@ body::-webkit-scrollbar {
 .contact_box {
   margin-top: 25px;
   padding: 10px 0;
+
 }
 
 .contact_box .sendMessage {
@@ -175,7 +176,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   transition: 200ms;
   text-decoration: none;
-  color: rgb(205, 21, 21);
+  color: black;
   font-size: 14px;
 }
 
