@@ -265,6 +265,7 @@ let config = {
   },
 };
 
+/*
 let validator = new Validator(config);
 
 //*MESSAGE NOTIFICATION
@@ -290,3 +291,4 @@ const validateForm = (e) => {
     alert("Please, fields are empty or incorect.");
   }
 };
+*/
