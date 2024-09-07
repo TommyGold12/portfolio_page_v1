@@ -99,17 +99,19 @@ const closeBio = function (e) {
   document.querySelector(".overlayWindow").remove();
 };
 
+/*
 //* RESIZE DISPLAY NONE/ BLOCK
 const width = function (e) {
   if (window.innerWidth <= 425) {
     category.classList.add("displayNone");
     category.classList.remove("displayBlock");
   } else {
-    //category.classList.remove("displayNone");
+    category.classList.remove("displayNone");
   }
 };
 window.addEventListener("load", width);
 window.addEventListener("resize", width);
+*/
 
 const overlay = document.querySelector(".overlay");
 //*OPEN MESSAGE OVERLAY
