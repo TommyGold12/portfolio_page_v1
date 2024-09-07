@@ -123,6 +123,17 @@ body::-webkit-scrollbar {
   margin-bottom: 15px;
 }
 
+.left_header h2 span {
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(50px);
+}
+
+.fadeMove {
+  transform: translateY(50px);
+  opacity: 1 !important;
+}
+
 .left_header h1 {
   color: rgb(21, 21, 21);
   font-size: 60px;
@@ -174,12 +185,34 @@ body::-webkit-scrollbar {
 
 .right_header {
   width: 300px;
+  border-radius: 50%;
+  position: relative;
   display: flex;
   justify-content: center;
-  border: 1px solid rgb(134, 30, 231);
+  align-items: center;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 7px solid rgb(192, 192, 192);
+  border-top: 7px solid rgb(17, 193, 17);
   border-radius: 50%;
-  overflow: hidden;
-  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 1.5s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .right_header img {

@@ -39,7 +39,6 @@ let projects = [
     link: "",
   },
 ];
-console.log(projects);
 
 const itemBox = document.querySelector(".itemBox");
 
@@ -124,13 +123,27 @@ document.querySelectorAll(".sendMessage").forEach(function (e) {
   });
 });
 
-/*
-window.onscroll = function (e) {
-    window.scrollTo({
-        top: 0
-    })
+//* HEADER animation text
+const textTag = document.querySelector(".left_header h2");
+const text = textTag.textContent;
+
+let splittedText = text.split("");
+console.log(splittedText);
+textTag.innerHTML = "";
+for (k = 0; k < text.length; k++) {
+  textTag.innerHTML += `<span>${splittedText[k]}</span>`;
 }
-*/
+
+j = 0;
+let interval = setInterval(() => {
+  let spans = textTag.querySelectorAll("span");
+  spans[j].classList.add("fadeMove");
+  j++;
+
+  if (j === text.length) {
+    clearInterval(interval);
+  }
+}, 150);
 
 //* CLOSE MESSAGE OVERLAY
 //outside click
