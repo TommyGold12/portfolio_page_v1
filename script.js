@@ -27,42 +27,80 @@ let projects = [
   },
   {
     id: "",
-    name: "Coming soon...",
-    date: "",
-    skills: "",
+    name: "Country Generator",
+    date: "December 2024",
+    skills: "HTML, CSS, JavaScript, Web API",
     img: "",
     p_1: "",
     p_2: "",
     p_3: "",
     p_4: "",
-    wallpaper: "img/blank.jpg",
-    link: "",
+    wallpaper: "img/countryGenerator.png",
+    link: "https://tommygold12.github.io/CountryGenerator/",
   },
 ];
 
 const itemBox = document.querySelector(".itemBox");
 
+//JSON.stringify prosljeđuje cijeli object u novu funkciju u oblizu array-a
 //* CREATE PROJECT LETTER
 const allProjects = projects.forEach((e) => {
   console.log(e);
   itemBox.innerHTML += `<div class="item">
-                            <div class="letterItem">
-                                <div class="letterWrapper"></div>
-                                <div class="letterBack"></div>
-                                <div class="letterSide_1"></div>
-                                <div class="letterSide_2"></div>
-                                <div class="letterCover"></div>
-                                <div class="letterImg">
-                                    <img alt="#" src=${e.wallpaper} />
+                            <div class="card">
+
+                              <div class="imgContainer">
+                                <div class="projectBio">
+                                  <p><span>➡️</span>${e.p_1}</p>
+                                  <p><span>➡️</span>${e.p_2}</p>
+                                  <p><span>➡️</span>${e.p_3}</p>
+                                  <p><span>➡️</span>${e.p_4}</p>
                                 </div>
-                                
-                            </div>
-                            <div class='bioItem'>
+                                <img alt="#" src=${e.wallpaper}>      
+                              </div>
+
+                              <div class="textContainer">
                                 <h3>${e.name}</h3>
-                                <div class="openBio"><button onClick="openBio(this)">More info</button></div>
+                                <p>${e.skills}</p>
+                                <p>${e.date}</p>
+
+                                <div class="buttons">
+                                  <a onclick= 'openBio(this, ${JSON.stringify(
+                                    e
+                                  )})' >More +</a>
+                                  <a class="newPage" href=${
+                                    e.link
+                                  } target ="_blank">Website -></a>
+                                </div>
+                              </div>                        
                             </div>
+                            
                         </div>`;
 });
+
+let click = false;
+
+const openBio = function (element, data) {
+  const parentElement = element.closest(".card");
+  const child = parentElement.querySelector(".imgContainer");
+  const anime = child.querySelector("img");
+  if (!click) {
+    anime.classList.remove("imgDeanimation");
+    anime.classList.add("imgAnimation");
+    //child.innerHTML = `<p>test____1</p>`;
+    element.innerHTML = "Return";
+    click = true;
+  } else {
+    anime.classList.remove("imgAnimation");
+    anime.classList.add("imgDeanimation");
+    element.innerHTML = "More +";
+    click = false;
+  }
+};
+
+/*
+
+
 
 //* OPEN - CLOSE ITEM OVERLAY BIO
 const openBio = function (e) {
@@ -92,12 +130,12 @@ const openBio = function (e) {
                                                         </div>`);
   });
 };
-
 const createBio = function (e) {};
 
 const closeBio = function (e) {
   document.querySelector(".overlayWindow").remove();
 };
+*/
 
 /*
 //* RESIZE DISPLAY NONE/ BLOCK
@@ -139,15 +177,27 @@ const animation = () => {
   }
 
   j = 0;
+
   let interval = setInterval(() => {
     let spans = textTag.querySelectorAll("span");
     spans[j].classList.add("fadeMove");
+    console.log(spans[j].classList);
+
     j++;
 
     if (j === text.length) {
       clearInterval(interval);
+      let k = text.length - 1;
+      let interval2 = setInterval(() => {
+        console.log(spans[k].classList.add("fadeRemove"));
+        k--;
+        if (k < 0) {
+          clearInterval(interval2);
+          animation();
+        }
+      }, 400);
     }
-  }, 200);
+  }, 150);
 };
 animation();
 //* CLOSE MESSAGE OVERLAY
